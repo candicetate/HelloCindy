@@ -16,6 +16,14 @@ p {
   padding: 1rem;
 }
 
+hr {
+  border: 2px dotted lightpink;
+  color: lightpink;
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 /*Navbar colors */
 
 .nav {
@@ -51,18 +59,27 @@ li.dropdown-toggle {
 /* Image styles */
 img {
   border-radius: 1rem;
+  padding: 1rem;
+  width: 450px;
+}
+
+.left {
+  border-radius: 1rem;
   float: left;
   padding: 1rem;
-  width: 25rem;
+}
+
+.right {
+  border-radius: 1rem;
+  float: right;
+  padding: 1rem;
 }
 
 /* Footer */
-.footer {
-  background-color: #000000;
+.container.footer {
+  background-color: #343a40;
   color: #ffffff;
   padding-bottom: 25px;
-  padding-left: 0px;
-  padding-right: 0px;
   padding-top: 25px;
   text-align: center;
   width: 100%;
