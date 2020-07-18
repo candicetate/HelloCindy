@@ -2,7 +2,7 @@
 
 body {
   background-color: #000000;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif !important;
   font-size: 5rem;
 }
 
@@ -16,12 +16,34 @@ p {
   padding: 1rem;
 }
 
-hr {
-  border: 2px dotted lightpink;
+/* For line */
+/* Glyph, by Harry Roberts */
+
+hr.style-eight {
+  overflow: visible; /* For IE */
+  padding: 0;
+  border: none;
+  border-top: medium double lightpink;
   color: lightpink;
-  display: block;
-  margin: 0 auto;
-  padding: 20px;
+  text-align: center;
+}
+hr.style-eight:after {
+  content: "♡";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: white;
+}
+
+a {
+  color: lightpink !important;
+}
+
+a:hover {
+  color: #000000 !important;
+  text-decoration: underline;
 }
 
 /*Navbar colors */
@@ -90,10 +112,10 @@ img {
 i.fas,
 i.fab,
 i.far {
-  color: #007bff;
+  color: lightpink;
   font-size: 3rem;
   margin: 0 auto;
-  padding: 5px;
+  padding-top: 25px;
 }
 
 /* For Mobile */
