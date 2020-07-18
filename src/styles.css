@@ -1,11 +1,19 @@
 /* Fonts */
 
 body {
+  background-color: #000000;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 5rem;
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 10rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+p {
+  padding: 1rem;
 }
 
 /*Navbar colors */
@@ -32,13 +40,43 @@ li.dropdown-toggle {
   color: lightpink !important;
 }
 
-/* Slideshow Text position */
-
-.carousel-caption,
-.carousel-item {
-  text-align: center;
+/* Container Styles */
+.container {
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 20px;
   vertical-align: center;
-  z-index: 3;
+}
+
+/* Image styles */
+img {
+  border-radius: 1rem;
+  float: left;
+  padding: 1rem;
+  width: 25rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding-bottom: 25px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 25px;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Social icons */
+i.fas,
+i.fab,
+i.far {
+  color: #007bff;
+  font-size: 3rem;
+  margin: 0 auto;
+  padding: 5px;
 }
 
 /* For Mobile */
@@ -47,15 +85,30 @@ li.dropdown-toggle {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) {
-  ...;
+  /* Image styles */
+  img {
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 5rem;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: @screen-md-min) {
-  ...;
+  /* Image styles */
+  img {
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 5rem;
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg-min) {
-  ...;
+  /* Image styles */
+  img {
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 5rem;
+  }
 }
