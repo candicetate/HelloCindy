@@ -1,5 +1,11 @@
+/* Fonts */
+
 body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+h1 {
+  font-size: 5rem;
 }
 
 /*Navbar colors */
@@ -24,6 +30,15 @@ li.dropdown-toggle {
 .dropdown,
 .show a {
   color: lightpink !important;
+}
+
+/* Slideshow Text position */
+
+.carousel-caption,
+.carousel-item {
+  text-align: center;
+  vertical-align: center;
+  z-index: 3;
 }
 
 /* For Mobile */
