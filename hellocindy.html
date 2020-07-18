@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Make Title Updates here-->
-    <title>Hello Cindy Beauty - Edmonton</title>
+    <title>Hello Cindy! Beauty - Edmonton</title>
     <!--Add the name of the content creator-->
     <meta name="author" content="Candice Tate" />
     <!--Update what appears in Search Engines-->
@@ -30,8 +30,48 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <!--This allows Bootstrap to fit for devices of all sizes-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
+    <!-- This is your navigation Bar -->
+    <nav class="navbar fixed-top navbar-dark bg-dark">
+        <!-- Branding-->
+      <a class="navbar-brand">Hello Cindy! Beauty</a>
+      <ul class="nav justify-content-end">
+          <!-- Book now button--> 
+        <li class="nav-item">
+          <button type="button" class="btn btn-light" href="#">Book Now</button>
+        </li>
+        <!--Services Dropdown-->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">Services</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Facials</a>
+              <a class="dropdown-item" href="#">Lashes</a>
+              <a class="dropdown-item" href="#">Nails</a>
+              <a class="dropdown-item" href="#">eGiftCards</a>
+              <a class="dropdown-item" href="#">Products</a>
+              <a class="dropdown-item" href="#">Courses</a>
+              
+          </li>
+           <!--Gallery-->
+        <li class="nav-item">
+          <a class="nav-link" href="#">Gallery</a>
+        </li>
+         <!--About dropdown-->
+         <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">About</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Contact</a>
+              <a class="dropdown-item" href="#">Policies</a>
+              <a class="dropdown-item" href="#">Forms</a>
+              <a class="dropdown-item" href="#">Meet Cindy</a>
+              
+          </li>
+      </ul>
+    </nav>
+
     <!--This JavaScript allows Bootstrap to run thing like dropdown menues-->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
