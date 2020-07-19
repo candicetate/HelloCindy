@@ -41,7 +41,7 @@
     <nav class="navbar fixed-top navbar-dark bg-dark">
         <!-- Branding-->
       <a class="navbar-brand">Hello Cindy! Beauty</a>
-      <ul class="nav justify-content-end">
+      <ul class="nav justify-content-end" id="collapsingNavbar1">
           <!-- Book now button--> 
         <li class="nav-item">
           <button type="button" class="btn btn-light" href="#">Book Now</button>
@@ -77,47 +77,43 @@
 
     <!--This is the image slideshow. You can add more images by copying the divs with the images in them. -->
     <!--Images have 100% width, so if they are different heights, there will be inconsistant sizing. Use images at sizes  2048 px x 1500 px-->
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-              <!--Changes image-->
-            <img src="images/cindy-couch.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One - Set the background image for this slide in the line below -->
+          <div class="carousel-item active" style="background-image: url('images/cindy-couch.jpg')">
             <div class="carousel-caption d-none d-md-block">
-                <!-- Change caption-->
-              <h1>Specializing in nails, lashes &amp; facials</h1>
+              <h1>Specialising in nails, lashes &amp; facials</h1>
+              
             </div>
           </div>
-          <div class="carousel-item">
-              <!--Changes image-->
-            <img src="images/sam-lashes-1.jpg" class="d-block w-100" alt="...">
+          <!-- Slide Two - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('images/sam-lashes-1.jpg')">
             <div class="carousel-caption d-none d-md-block">
-                <!-- Change caption-->
                 <h1>Lash Extensions</h1>
+             
             </div>
           </div>
-          <div class="carousel-item">
-              <!--Changes image-->
-            <img src="images/cindy-couch.jpg" class="d-block w-100" alt="...">
+          <!-- Slide Three - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('images/cindy-couch.jpg')">
             <div class="carousel-caption d-none d-md-block">
-                <!-- Change caption-->
-              <h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              <h2 class="display-4">Third Slide</h2>
+              <p class="lead">This is a description for the third slide.</p>
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
       </div>
 
 

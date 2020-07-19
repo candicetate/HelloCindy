@@ -77,6 +77,17 @@ li.dropdown-toggle {
   color: rgb(255, 182, 193) !important;
 }
 
+/* Slideshow settings */
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 /* Container Styles */
 .container {
   background-color: #ffffff;
@@ -128,17 +139,90 @@ i.far {
 }
 
 /* For Mobile */
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
+/* responsive nav stacked liked 3.x */
+@media (max-width: 992px) {
+  button {
+    font-size: 1rem;
+    padding: 1px;
+  }
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) {
+  ul {
+    font-size: 1rem;
+    padding: 1px;
+  }
+
+  .navbar-brand {
+    display: block;
+    float: none;
+    font-size: 1rem;
+    padding: 1px;
+    text-align: center;
+  }
+
+  .navbar-nav {
+    float: none !important;
+    font-size: 1rem;
+    padding: 1px;
+  }
 }
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) {
+@media (max-width: 768px) {
+  button {
+    font-size: 1rem;
+    padding: 1px;
+  }
+
+  ul {
+    font-size: 1rem;
+    padding: 2px;
+  }
+
+  .navbar-brand {
+    float: none;
+    display: block;
+    padding: 1px;
+  }
+
+  .navbar-nav {
+    float: none !important;
+    font-size: 1rem;
+    padding: 1px;
+  }
 }
 
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) {
+@media (max-width: 544px) {
+  button {
+    font-size: 0.75rem;
+    padding: 1px;
+  }
+
+  ul {
+    font-size: 0.75rem;
+    padding: 1px;
+  }
+
+  .navbar-brand {
+    float: none;
+    font-size: 0.75rem;
+    display: block;
+    padding: 1px;
+  }
+
+  .navbar-nav {
+    float: none !important;
+    font-size: 0.75rem;
+    padding: 1px;
+  }
+
+  .left {
+    border-radius: 1rem;
+    float: none;
+    padding: 1rem;
+  }
+
+  .right {
+    border-radius: 1rem;
+    float: none;
+    padding: 1rem;
+  }
 }
